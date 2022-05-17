@@ -1,0 +1,22 @@
+{
+  "name": "js_innowise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoSAN10/js_innowise.git"
+  },
+  "author": "Daniil Privalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoSAN10/js_innowise/issues"
+  },
+  "homepage": "https://github.com/LeoSAN10/js_innowise#readme",
+  "dependencies": {
+    "swiper": "^8.1.4"
+  }
+}

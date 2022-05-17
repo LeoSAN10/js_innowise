@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Revalia', cursive;
+}
+
+.hide {
+    display: none;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-grey-light {
+    color: var(--greyLight);
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #F2DD92;
+    display: flex;
+    height: 102px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.header_title{
+    font-size: 30px;
+    align-self: center;
+    margin: auto
+}
+
+.header_favorites{
+    margin-right: 83px;
+}
+
+.favorites_btn{
+    background-color: #F2DD92;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.main{
+    background-color: #FBF0C9;
+    height: 757px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-search-field{
+    background-color: #F2DD92;
+    width: 1193px;
+    height: 43px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchInput{
+    border: none;
+    background-color: #F2DD92;
+    border-radius: 52px;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 20px;
+}
+
+#searchInput:focus-visible{
+    outline: none;
+}
+
+#movielist-default-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#watchlist-default-display-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    max-height: 400px;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-title{
+    font-size: 16px;
+    height: 60px;
+}
+
+.card-poster {
+    border-radius: 2px;
+    height: 200px;
+    object-fit: contain;
+    width: 200px;
+}
+
+.card-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info{
+    display: flex;
+}
+
+.star-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 19px;
+}
+
+.card-rating{
+    align-items: center;
+    display: flex;
+}
+
+.footer{
+    height: 41px;
+    background-color: #F2DD92;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_company{
+    font-size: 15px;
+}
+
+.swiper{
+    width: 1300px;
+}
+
+
+.swiper-slide{
+    width: 25%;
+}
+
+.swiper-wrapper{
+}
+
