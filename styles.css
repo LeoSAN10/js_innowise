@@ -12,18 +12,7 @@ body{
 
 .hide {
     display: none;
-}
-
-.mb-1 {
-    margin-bottom: 1em;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-grey-light {
-    color: var(--greyLight);
+    overflow: hidden;
 }
 
 .container{
@@ -105,8 +94,8 @@ body{
 }
 
 .card {
-    max-height: 400px;
-    width: 200px;
+    height: 450px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -114,7 +103,8 @@ body{
 
 .card-title{
     font-size: 16px;
-    height: 60px;
+    width: 100px;
+    height: 80px;
 }
 
 .card-poster {
@@ -125,13 +115,11 @@ body{
 }
 
 .card-header {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-info{
     display: flex;
+    align-items: center;
 }
 
 .star-icon {
@@ -163,9 +151,32 @@ body{
 
 
 .swiper-slide{
-    width: 25%;
+    width: 325px;
 }
 
 .swiper-wrapper{
 }
 
+.card-btn-favorietes{
+    background-color: #FBF0C9;
+    border: none;
+    cursor: pointer;
+    align-content: flex-end;
+}
+
+.heart{
+    color: black;
+}
+
+svg{
+    fill: #FBF0C9;
+    stroke: black;
+    stroke-width: 50px;
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.ddd{
+    fill: black
+}

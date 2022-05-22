@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/LeoSAN10/js_innowise#readme",
   "dependencies": {
+    "express": "^4.18.1",
+    "live-server": "^1.2.2",
     "swiper": "^8.1.4"
   }
 }
