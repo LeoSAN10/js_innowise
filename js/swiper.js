@@ -16,3 +16,4 @@ const swiper = new Swiper('.swiper', {
   
   });
 
+// export default swiper

@@ -10,6 +10,11 @@ body{
     font-family: 'Revalia', cursive;
 }
 
+
+.background{
+    background-color: #F2DD92 !important;
+}
+
 .hide {
     display: none;
     overflow: hidden;
@@ -39,7 +44,7 @@ body{
     margin-right: 83px;
 }
 
-.favorites_btn{
+#favorites_btn{
     background-color: #F2DD92;
     border: none;
     cursor: pointer;
@@ -49,8 +54,9 @@ body{
 }
 
 .main{
+    position: relative;
     background-color: #FBF0C9;
-    height: 757px;
+    min-height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,24 +108,34 @@ body{
 }
 
 .card-title{
-    font-size: 16px;
-    width: 100px;
+    font-size: 12px;
+    width: 200px;
     height: 80px;
+    text-align: center;
 }
 
 .card-poster {
-    border-radius: 2px;
-    height: 200px;
-    object-fit: contain;
-    width: 200px;
+    object-fit: fill;
 }
 
-.card-header {
+img.card-poster{
+    border-radius: 30px;
+    min-width: 200px;
+    height: 300px;
 }
+
 
 .card-info{
     display: flex;
     align-items: center;
+}
+
+.card-year{
+    margin-left: 30%;
+}
+
+.like{
+    margin-left: 40px;
 }
 
 .star-icon {
@@ -155,6 +171,22 @@ body{
 }
 
 .swiper-wrapper{
+    margin-top: 100px;
+}
+.swiper-pagination-bullet-active{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.swiper-pagination-bullet{
+    margin-right: 10px;
+    background: black;
+    height: 14px;
+    width: 14px;
+}
+
+.swiper-pagination{
+    position: unset;
 }
 
 .card-btn-favorietes{
@@ -179,4 +211,26 @@ svg{
 
 .ddd{
     fill: black
+}
+
+
+#watchlist{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0%;
+    bottom: 0%;
+    width: 50%;
+    right: 0%;
+    z-index: 9999999999;
+    background-color: #F2DD92;
+}
+
+#favorites{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
