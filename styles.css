@@ -58,6 +58,10 @@ a {
     
 }
 
+#header_favorites{
+    fill: black;
+}
+
 .main{
     width: 100%;
     background-color: #FBF0C9;

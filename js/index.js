@@ -1,4 +1,4 @@
-import swiper from './swiper'
+// import swiper from './swiper'
 const searchInput = document.getElementById('searchInput')
 const searchBtn = document.getElementById('searchBtn')
 const moviesList = document.getElementById('moviesList')
@@ -152,7 +152,6 @@ function showWatchlist() {
       const watchlistItem = fn.target.closest('path')
       watchlistItem.classList.remove('inWatchlist')
       const activeCard = fn.target.closest('div.card')
-      console.log(checkAvailability(keys, `${activeCard.id}key`))
       if (checkAvailability(keys, `${activeCard.id}key`)) {
         localStorage.removeItem(`${activeCard.id}key`)
       }
