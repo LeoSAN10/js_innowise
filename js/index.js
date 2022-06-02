@@ -26,11 +26,9 @@ function addToWatchlist(fn) {
   const movieKey = buttonCard.closest('div.card')
   const keys = Object.keys(localStorage)
   if (checkAvailability(keys, `${movieKey.id}key`)) {
-    console.log('2222')
     localStorage.removeItem(`${movieKey.id}key`, html.innerHTML)
     fn.target.closest('path').classList.remove('inWatchlist')
   } else {
-    console.log('1111')
     fn.target.closest('path').classList.add('inWatchlist')
     localStorage.setItem(`${movieKey.id}key`, html.innerHTML)
   }
