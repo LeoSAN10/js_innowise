@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     slidesPerGroup: 4,
     loop: true,
+    observer: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -16,4 +17,4 @@ const swiper = new Swiper('.swiper', {
   
   });
 
-// export default swiper
+  export default swiper

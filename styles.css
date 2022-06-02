@@ -10,6 +10,11 @@ body{
     font-family: 'Revalia', cursive;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .background{
     background-color: #F2DD92 !important;
@@ -54,7 +59,7 @@ body{
 }
 
 .main{
-    position: relative;
+    width: 100%;
     background-color: #FBF0C9;
     min-height: 900px;
     display: flex;
@@ -85,6 +90,35 @@ body{
     outline: none;
 }
 
+#deleteBtn{
+    fill: grey;
+}
+#deleteTextBtn{
+    cursor: pointer;
+    background-color: #F2DD92;
+    border: none;
+}
+
+.svgDeletetext{
+    stroke: none;
+    width: 35px;
+    height: 35px;
+}
+
+#searchBtn{
+    cursor: pointer;
+    background-color: #F2DD92;
+    border: none;
+    margin-right: 20px;
+}
+
+#searchIcon{
+    stroke: none;
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+}
+
 #movielist-default-container {
     align-items: center;
     display: flex;
@@ -100,6 +134,7 @@ body{
 }
 
 .card {
+    width: 350px;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -115,7 +150,8 @@ body{
 }
 
 .card-poster {
-    object-fit: fill;
+
+    max-width: 200px;
 }
 
 img.card-poster{
@@ -157,17 +193,29 @@ img.card-poster{
     align-items: center;
 }
 
+#gitHubIcon{
+    stroke: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.footer_link{
+    display: flex;
+    align-items: center;
+}
+
 .footer_company{
     font-size: 15px;
 }
 
 .swiper{
-    width: 1300px;
+    width: 1400px;
 }
 
 
 .swiper-slide{
-    width: 325px;
+    width: 350px;
 }
 
 .swiper-wrapper{
@@ -209,7 +257,7 @@ svg{
     align-self: flex-end;
 }
 
-.ddd{
+.inWatchlist{
     fill: black
 }
 
@@ -217,20 +265,16 @@ svg{
 #watchlist{
     display: none;
     position: absolute;
-    overflow: hidden;
-    top: 0%;
-    bottom: 0%;
     width: 50%;
     right: 0%;
+    min-height: 900px;
     z-index: 9999999999;
     background-color: #F2DD92;
 }
 
 #favorites{
     padding: 20px;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
