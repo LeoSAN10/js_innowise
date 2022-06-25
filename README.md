@@ -8,4 +8,4 @@ App for find the right movies from a large movie gallery
 
 ## How to run:
 
-    * go to the dist folder and open index.html file
+    * https://62b73b326d2aa116c60cb41d--leafy-tulumba-e22c81.netlify.app/
