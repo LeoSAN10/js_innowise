@@ -2,10 +2,7 @@
  * @jest-environment jsdom
  */
 
-function clearSearchInput() {
-  searchInput.value = ''
-  return searchInput.value
-}
+import Drawer from '../js/modules/drawer'
 
 it('clearInput', () => {
   document.body.innerHTML = `
@@ -13,6 +10,7 @@ it('clearInput', () => {
     `
   const searchInput = document.getElementById('searchInput')
   searchInput.value = 'ddd'
+  Drawer.clearSearchInput()
 
-  expect(clearSearchInput()).toBe('')
+  expect(searchInput.value).toBe('')
 })

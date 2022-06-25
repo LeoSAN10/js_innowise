@@ -1,8 +1,4 @@
-function checkAvailability(arr, val) {
-    return arr.some(function (arrVal) {
-      return val == arrVal
-    })
-  }
+import { checkAvailability } from "../js/modules/utils";
 const arr = [1,2,3];
 const val = 1;
 
