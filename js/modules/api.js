@@ -1,4 +1,4 @@
-import drawer from './drawer.js';
+import drawer from './drawer.js'
 
 class Response {
   async getMovies() {
@@ -15,5 +15,4 @@ class Response {
   }
 }
 
-
-export default new Response
+export default new Response()

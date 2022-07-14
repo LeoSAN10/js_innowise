@@ -1,9 +1,9 @@
-import Watchlist from "./watchlist.js"
-import Storage from "./localStorage.js"
-import { checkAvailability } from "./utils.js"
+import Watchlist from './watchlist.js'
+import Storage from './localStorage.js'
+import { checkAvailability } from './utils.js'
 
 class Drawer {
-  constructor(storage){
+  constructor(storage) {
     this._storage = storage
   }
   fillHeartsIfInLocalStorage(cards) {
@@ -12,9 +12,7 @@ class Drawer {
       for (let j = 0; j < cards.length; j++) {
         let item = cards[j]
         if (checkAvailability(keys, `${item.id}key`)) {
-          item.querySelector('path').classList.add(
-            'inWatchlist',
-          )
+          item.querySelector('path').classList.add('inWatchlist')
         }
       }
     }
@@ -69,7 +67,6 @@ class Drawer {
   clearSearchInput() {
     searchInput.value = ''
   }
-
 }
 
-export default new Drawer(new Storage());
+export default new Drawer(new Storage())
